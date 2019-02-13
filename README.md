@@ -20,8 +20,10 @@
 
 ## Usage
 ```javascript
-import RNBeginBackgroundTask from 'react-native-begin-background-task';
+import { beginBackgroundTask, endBackgroundTask } from 'react-native-begin-background-task';
 
-// TODO: What to do with the module?
-RNBeginBackgroundTask;
+// ...
+const backgroundTaskId = await beginBackgroundTask();
+// ...
+await endBackgroundTask(backgroundTaskId)
 ```
